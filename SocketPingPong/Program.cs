@@ -198,6 +198,7 @@ namespace SocketPingPong
             Thread.Sleep(1000);
             handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
                 new AsyncCallback(ReadCallback), state);
+
         }
 
         internal void ReadCallback(IAsyncResult ar)
